@@ -1,0 +1,29 @@
+{
+  "addons": [
+    "herokuconnect",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "description": "",
+  "env": {
+    "HEROKUCONNECT_URL": {
+      "required": true
+    },
+    "PGSSLMODE": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "play-heroku",
+  "scripts": {
+  },
+  "stack": "cedar-14"
+}
