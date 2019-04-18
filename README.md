@@ -1,1 +1,2 @@
 # play-heroku
+# sample app
